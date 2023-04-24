@@ -25,8 +25,8 @@ export default function Create() {
       <div className=" px-setting flex flex-col md:flex-row gap-10 py-10">
         <div className="lg:w-1/4 space-y-4">
           <h2>Preview Item</h2>
-          {Priview__Data.map((item) => (
-            <CardDetailNft key={item.id} id={item.id} imgUrl={item.imgUrl} creatorImg={item.creatorImg} title={item.title} currentBid={item.currentBid} creator={item.creator} />
+          {Priview__Data.map((item, index) => (
+            <CardDetailNft key={index} imgUrl={item.imgUrl} creatorImg={item.creatorImg} title={item.title} currentBid={item.currentBid} creator={item.creator} />
           ))}
         </div>
 
