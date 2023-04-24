@@ -10,7 +10,7 @@ import ButtonPlaceBid from '../../../components/buttonplacebid';
 export default function DetailNft() {
   const router = useRouter();
   const { id } = router.query;
-  const NFT_Data = NFT__DATA.find((item) => item.id == id);
+  const NFT_Data = NFT__DATA.find((item) => item.id == Number(id));
   return (
     <Layout>
       <HeroSection title={NFT_Data?.title as string} />
