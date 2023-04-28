@@ -5,15 +5,6 @@ import { CardDetailNft } from '../../../components/card';
 import { NFT__DATA } from '../../../assets/data/data';
 import { StaticImageData } from 'next/image';
 
-interface TypeData {
-  id?: number;
-  title: string;
-  imgUrl: string | StaticImageData;
-  creator: string;
-  creatorImg: string | StaticImageData;
-  currentBid: number;
-}
-
 export default function Market() {
   const [data, setData] = useState(NFT__DATA);
 

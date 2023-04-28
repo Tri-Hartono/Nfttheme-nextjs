@@ -37,14 +37,10 @@ export default function Navbar() {
   return (
     <div className={'' + (navScroll ? 'fixed top-0 left-0 bg-bg-colors z-10 w-full border-b-2 border-btn-blue/60' : 'fixed top-0 left-0 w-full border-b-2 bg-transparent z-10 border-btn-blue/60')}>
       <div className="flex items-center justify-between h-20 px-setting  3xl:w-5/6 4xl:w-1/2 m-auto  ">
-        <Link
-          href="/"
-          style={{ background: 'linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6)', backgroundSize: '100% 100%', backgroundClip: 'text', WebkitTextStroke: '3px transparent', WebkitTextFillColor: '#14141f' }}
-          className="text-4xl font-bold text-transparent"
-        >
+        <Link href="/" className="text-4xl font-bold text-transparent bg-gradient-to-br from-btn-blue to-clr-purple bg-clip-text">
           {' '}
-          <FontAwesomeIcon className="" icon={faFireFlameCurved} />
-          NFTs
+          <FontAwesomeIcon className="stroke-[20px] stroke-clr-purple mr-2 " icon={faFireFlameCurved} />
+          <span>NFTs</span>
         </Link>
         <div
           className={
@@ -59,8 +55,8 @@ export default function Navbar() {
           ))}
         </div>
         <div>
-          <button>
-            <Link href="/wallet">
+          <button className="relative  ">
+            <Link href="/wallet" className=" ">
               <FontAwesomeIcon icon={faWallet} className="px-2" />
               connect wallet
             </Link>

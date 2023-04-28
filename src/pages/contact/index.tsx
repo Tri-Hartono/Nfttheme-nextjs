@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="form__input">
               <textarea placeholder="Write Message"></textarea>
             </div>
-            <button className="bg-white text-black font-medium">Send a Message</button>
+            <button className="bg-white text-bg-colors hover:text-white font-medium ">Send a Message</button>
           </form>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Homepages() {
       <div className=" flex flex-col-reverse md:flex-row items-center justify-between pt-28 pb-10 gap-6 ">
         <div className="md:w-1/2 space-y-4 ">
           <div className="text-2xl md:text-4xl lg:text-[40px]   font-bold ">
-            Discovery rare digital art and Collect <span className="bg-gradient-to-br from-clr-purple to-clr-blue text-transparent bg-clip-text">Sell Extraordinary</span> NFTs
+            Discovery rare digital art and Collect <span className="bg-gradient-to-br from-clr-purple to-clr-blue text-transparent  bg-clip-text">Sell Extraordinary</span> NFTs
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eius consectetur totam laboriosam suscipit qui voluptates iusto incidunt asperiores nulla nemo, ut fuga! Doloremque, consectetur repellendus quas error dolorum
@@ -24,13 +24,13 @@ export default function Homepages() {
           </p>
           <div className="space-x-4 flex items-center pt-6">
             <Link href="/market">
-              <button>
+              <button className="">
                 <FontAwesomeIcon icon={faRocket} className="px-2" />
                 Explore
               </button>
             </Link>
             <Link href="/create">
-              <button>
+              <button className="">
                 <FontAwesomeIcon icon={faPen} className="px-2" />
                 Create
               </button>
